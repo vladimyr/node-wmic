@@ -1,0 +1,40 @@
+{
+  "name": "node-wmic",
+  "version": "1.0.0",
+  "description": "wmic wrapper for node",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "concat-stream": "^1.4.10",
+    "debug": "^2.2.0",
+    "elementtree": "^0.1.6",
+    "fecha": "^0.2.1",
+    "minimist": "^1.1.1",
+    "replacestream": "^2.1.0",
+    "strip-bom": "^1.0.0"
+  },
+  "devDependencies": {},
+  "bin": {
+    "wmic2": "wmic2.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vladimyr/node-wmic"
+  },
+  "keywords": [
+    "wmic",
+    "wmi"
+  ],
+  "author": "vladimyr",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/vladimyr/node-wmic/issues"
+  },
+  "homepage": "https://github.com/vladimyr/node-wmic"
+}
