@@ -13,6 +13,14 @@ var os       = require('os'),
 
 var execErr;
 
+function unlinkFile(file){
+    try {
+        return fs.unlinkSync(file);
+    } catch(e) {
+        // ignore unlinkig error
+    }
+}
+
 function adjustLineEndings(lineEnding){
     lineEnding = lineEnding || os.EOL;
     return replace(/(\r+\n)+/g, lineEnding);
@@ -137,7 +145,7 @@ function wmicExec(query, options, callback){
 
     callback = callback || Function.prototype;
     function cbWrapper(){
-        fs.unlinkSync('./TempWmicBatchFile.bat');
+        unlinkFile('./TempWmicBatchFile.bat');
         callback.apply(this, arguments);
     }
 
